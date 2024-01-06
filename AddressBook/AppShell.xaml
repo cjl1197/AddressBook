@@ -14,4 +14,11 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Add Contact"
+        Shell.NavBarIsVisible="false"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="AddContactPage" />
+
+
 </Shell>

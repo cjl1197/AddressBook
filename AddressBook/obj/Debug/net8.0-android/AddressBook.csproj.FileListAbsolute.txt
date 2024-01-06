@@ -1060,3 +1060,4 @@ C:\Users\Craig\Desktop\maui\AddressBook\AddressBook\obj\Debug\net8.0-android\res
 C:\Users\Craig\Desktop\maui\AddressBook\AddressBook\obj\Debug\net8.0-android\resizetizer\f\fa-brands.otf
 C:\Users\Craig\Desktop\maui\AddressBook\AddressBook\obj\Debug\net8.0-android\resizetizer\f\fa-regular.otf
 C:\Users\Craig\Desktop\maui\AddressBook\AddressBook\obj\Debug\net8.0-android\resizetizer\f\fa-solid.otf
+C:\Users\Craig\Desktop\maui\AddressBook\AddressBook\obj\Debug\net8.0-android\AddressBook.sourcelink.json

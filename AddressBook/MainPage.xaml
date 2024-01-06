@@ -67,6 +67,7 @@
             Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
+            BackgroundColor="White"
             x:Name="listContacts" />   
 
            
@@ -81,14 +82,6 @@
                 Clicked="AddContact_Clicked"
                 HorizontalOptions="Center" />
 
-            <!--<Button
-                Margin="5"
-                Grid.Row="2"
-                Grid.Column="1"
-                x:Name="EditContactBtn"
-                Text="Edit Contact" 
-                SemanticProperties.Hint="Navigates to edit contact page"
-                HorizontalOptions="Center" />-->
 
     </Grid>
 
