@@ -1,4 +1,4 @@
-﻿using AddressBook.Pages;
+﻿using AddressBook.View;
 
 namespace AddressBook;
 

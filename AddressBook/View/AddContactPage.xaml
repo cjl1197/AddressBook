@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fontAwesome="clr-namespace:AddressBook.Helpers"
+             x:Class="AddressBook.View.AddContactPage"
+             Title="AddContactPage">
+    <Grid
+        Grid.ColumnDefinitions="*, *"
+        Grid.RowDefinitions="*, Auto"
+        BackgroundColor="{StaticResource Secondary}">
+
+        <VerticalStackLayout
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="White">
+        <Border
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="{StaticResource Primary}"
+            StrokeThickness="2"
+            StrokeShape="Rectangle 40"
+            Margin="45,5"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand">
+            
+            <HorizontalStackLayout>
+                <Image
+                    HorizontalOptions="Start"
+                    Margin="20, 0">
+                    <Image.Source>
+                        <FontImageSource 
+                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.User}"
+                            FontFamily="FAS"
+                            Color="{StaticResource Primary}"
+                            Size="24"/>
+                    </Image.Source>
+                </Image>
+                <Entry 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Placeholder="Name"
+                    PlaceholderColor="{StaticResource Primary}"
+                    ClearButtonVisibility="WhileEditing"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </Border>
+            
+        <Border
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="{StaticResource Primary}"
+            StrokeThickness="2"
+            StrokeShape="Rectangle 40"
+            Margin="45,5"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand">
+            
+            <HorizontalStackLayout>
+                <Image
+                    HorizontalOptions="Start"
+                    Margin="20, 0">
+                    <Image.Source>
+                        <FontImageSource 
+                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.Phone}"
+                            FontFamily="FAS"
+                            Color="{StaticResource Primary}"
+                            Size="24"/>
+                    </Image.Source>
+                </Image>
+                <Entry 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Placeholder="Phone Number"
+                    PlaceholderColor="{StaticResource Primary}"
+                    ClearButtonVisibility="WhileEditing"
+                    Keyboard="Telephone"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </Border>
+        <Border
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="{StaticResource Primary}"
+            StrokeThickness="2"
+            StrokeShape="Rectangle 40"
+            Margin="45,5"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand">
+            
+            <HorizontalStackLayout>
+                <Image
+                    HorizontalOptions="Start"
+                    Margin="20, 0">
+                    <Image.Source>
+                        <FontImageSource 
+                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.Envelope}"
+                            FontFamily="FAS"
+                            Color="{StaticResource Primary}"
+                            Size="24"/>
+                    </Image.Source>
+                </Image>
+                <Entry 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Placeholder="Email"
+                    Keyboard="Email"
+                    PlaceholderColor="{StaticResource Primary}"
+                    ClearButtonVisibility="WhileEditing"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </Border>
+        <Border
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Stroke="{StaticResource Primary}"
+            StrokeThickness="2"
+            StrokeShape="Rectangle 40"
+            Margin="45,5"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand">
+            
+            <HorizontalStackLayout>
+                <Image
+                    HorizontalOptions="Start"
+                    Margin="20, 0">
+                    <Image.Source>
+                        <FontImageSource 
+                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.LocationDot}"
+                            FontFamily="FAS"
+                            Color="{StaticResource Primary}"
+                            Size="24"/>
+                    </Image.Source>
+                </Image>
+                <Entry 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Placeholder="Address"
+                    PlaceholderColor="{StaticResource Primary}"
+                    ClearButtonVisibility="WhileEditing"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </Border>
+        </VerticalStackLayout>        
+        <Button 
+            Grid.Row="1"
+            Grid.Column="0"
+            x:Name="AddBtn"
+            Text="Add"
+            Clicked="Add_Clicked"
+            Margin="5"/>
+        <Button 
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="CancelBtn"
+            Text="Cancel"
+            Clicked="Cancel_Clicked"
+            Margin="5"/>
+    </Grid>
+</ContentPage>

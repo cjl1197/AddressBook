@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\AddressBook.csproj": {}
+    "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\AddressBook.csproj": {
+    "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\AddressBook.csproj",
+        "projectUniqueName": "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj",
         "projectName": "AddressBook",
-        "projectPath": "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\AddressBook.csproj",
+        "projectPath": "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj",
         "packagesPath": "C:\\Users\\Craig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\obj\\",
+        "outputPath": "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

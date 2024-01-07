@@ -16,7 +16,7 @@
 
     <ShellContent
         Title="Add Contact"
-        Shell.NavBarIsVisible="false"
+        Shell.NavBarIsVisible="true"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="AddContactPage" />
 
