@@ -1,5 +1,7 @@
 ﻿using AddressBook.Pages;
+using AddressBook.Helpers;
 using System;
+using System.Text.Json.Serialization;
 
 namespace AddressBook;
 
@@ -10,6 +12,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		
+		
 		List<string> contacts = new List<string>()
 		{
 			"John Smith",
@@ -19,13 +22,12 @@ public partial class MainPage : ContentPage
 		};
 		
 		listContacts.ItemsSource = contacts;
-
 	}
 	
-
 	private async void AddContact_Clicked(object sender, EventArgs e)
 	{
-		await Navigation.PushModalAsync(new AddContactPage());
+		await Navigation.PushModalAsync(new AddContactPage()); 
+
 	}
 }
 
