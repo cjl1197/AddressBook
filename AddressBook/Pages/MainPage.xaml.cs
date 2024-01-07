@@ -13,15 +13,22 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 		
 		
-		List<string> contacts = new List<string>()
+		List<Contact> contacts = new List<Contact>()
 		{
-			"John Smith",
-			"Jane Doe",
-			"Dad",
-			"Mom"
+			new Contact { Name="John Smith", Email="JohnSmith@mail.com"},
+			new Contact { Name="Jane Doe", Email="JaneDoe@mail.com"},
+			new Contact { Name="Mom"},
+			new Contact { Name="Dad", Email="dad@mail.com"}
+		 
 		};
 		
 		listContacts.ItemsSource = contacts;
+	}
+	
+	public class Contact
+	{
+		public string Name {get; set;}
+		public string? Email {get; set;}
 	}
 	
 	private async void AddContact_Clicked(object sender, EventArgs e)

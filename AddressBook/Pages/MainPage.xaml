@@ -63,12 +63,28 @@
 
         </Border>
 
-        <ListView
+          <ScrollView
             Grid.Row="1"
             Grid.Column="0"
-            Grid.ColumnSpan="2"
-            BackgroundColor="White"
-            x:Name="listContacts" />   
+            Grid.ColumnSpan="2">
+
+            <CollectionView
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                SelectionMode="Single"
+                x:Name="listContacts">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}"
+                                FontSize="20"
+                                Margin="40, 10"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView> 
+
+        </ScrollView>
 
            
             <Button

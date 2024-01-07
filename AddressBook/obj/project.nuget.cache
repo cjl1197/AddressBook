@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AJ4J+gWLJZfl+4ojsoC4gffX7TxbxsLYhL/wOEvzukPUyN1y/qRZFfXOk5SJQBV1T8vwJo2316XKs9U2ooHcxg==",
+  "dgSpecHash": "45DDinZgVXweQrJ/V8qMwO7NTcVLTSZRDJczxREcXXR0tUMPGnXzZ9K/LNSFE255dwbLufxX3JBgvBoRYaYnkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj",
+  "projectFilePath": "C:\\Users\\Craig\\Desktop\\maui\\git_test\\AddressBook\\AddressBook\\AddressBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Craig\\.nuget\\packages\\communitytoolkit.maui\\7.0.1\\communitytoolkit.maui.7.0.1.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.1\\communitytoolkit.maui.core.7.0.1.nupkg.sha512",
