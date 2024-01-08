@@ -10,21 +10,23 @@
         
 
     <ContentPage.Behaviors>
-        <mct:StatusBarBehavior StatusBarColor="{StaticResource Secondary}" />
+        <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
     </ContentPage.Behaviors>
     
     <Grid
         RowDefinitions="Auto, *, Auto"
-        BackgroundColor="{StaticResource Secondary}"
         ColumnDefinitions="*, *">
 
    
-
+    <StackLayout
+        Grid.Row="0"
+        Grid.Column="0"
+        Grid.ColumnSpan="2"
+        BackgroundColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}">
         <Border
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Stroke="{StaticResource Primary}"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 40"
             Margin="45,5"
@@ -38,29 +40,26 @@
                         <FontImageSource 
                             Glyph="{x:Static fontAwesome:FontAwesomeIcons.MagnifyingGlass}"
                             FontFamily="FAS"
-                            Color="{StaticResource Primary}"
+                            Color="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}"
                             Size="24"/>
                     </Image.Source>
                 </Image>
 
                 <Entry
                     x:Name="entry"
-                    BackgroundColor="Transparent"
-                    PlaceholderColor="{StaticResource Primary}"
                     ClearButtonVisibility="WhileEditing"
+                    HorizontalOptions="FillAndExpand"
                     IsVisible="{Binding RemoveBorders}"
                     FontSize="16"
                     Placeholder="Search Contacts"/>
             </HorizontalStackLayout>
 
         </Border>
-
-
+</StackLayout>
             <CollectionView
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                BackgroundColor="White"
                 SelectionMode="Single"
                 x:Name="listContacts">
                 <CollectionView.ItemTemplate>
@@ -68,16 +67,14 @@
                         <StackLayout>
                             <Label Text="{Binding Name}"
                                     FontSize="20"
-                                    Margin="40, 10"/>
+                                    Margin="40, 5, 0, 0"/>
                             <Label Text="{Binding Email}"
                                     FontSize="14"
-                                    Margin="40, 0"/>
+                                    Margin="50, 0, 0, 5"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView> 
-
-
            
             <Button
                 Margin="5"
@@ -89,7 +86,6 @@
                 SemanticProperties.Hint="Navigates to add contact page"
                 Clicked="AddContact_Clicked"
                 HorizontalOptions="Center" />
-
 
     </Grid>
 
