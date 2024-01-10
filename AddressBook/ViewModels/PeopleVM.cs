@@ -2,7 +2,7 @@
 using AddressBook.View;
 using AddressBook.Models;
 using Newtonsoft.Json;
-namespace AddressBook.ViewModel;
+namespace AddressBook.ViewModels;
 
 public class PeopleVM
 {
@@ -16,6 +16,13 @@ public class PeopleVM
 
     }
 
+    public static async Task<People> GetContact(int userId)
+	{
+			HttpClient httpClient = new HttpClient();
+			string json = await httpClient.GetStringAsync($"http://10.0.2.2:8080/users/{userId}");
+			return JsonConvert.DeserializeObject<People>(json);
+
+    }
 
 	
 		 
