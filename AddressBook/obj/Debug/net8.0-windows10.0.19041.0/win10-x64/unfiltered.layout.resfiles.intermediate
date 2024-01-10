@@ -1,3 +1,9 @@
+fa-brands.otf
+fa-regular.otf
+fa-solid.otf
+Font Awesome 6 Brands-Regular-400.otf
+Font Awesome 6 Free-Regular-400.otf
+Font Awesome 6 Free-Solid-900.otf
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
 address_book.scale-100.png
@@ -52,6 +58,11 @@ dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+magnifying_glass_solid.scale-100.png
+magnifying_glass_solid.scale-125.png
+magnifying_glass_solid.scale-150.png
+magnifying_glass_solid.scale-200.png
+magnifying_glass_solid.scale-400.png
 address_bookSplashScreen.scale-100.png
 address_bookSplashScreen.scale-125.png
 address_bookSplashScreen.scale-150.png

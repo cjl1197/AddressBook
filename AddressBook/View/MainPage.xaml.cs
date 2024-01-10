@@ -1,4 +1,5 @@
 ﻿using AddressBook.View;
+using AddressBook.ViewModel;
 
 namespace AddressBook;
 
@@ -9,18 +10,15 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		
-		
-		List<Contact> contacts = new List<Contact>()
-		{
-			new Contact { Name="John Smith", Email="JohnSmith@mail.com"},
-			new Contact { Name="Jane Doe", Email="JaneDoe@mail.com"},
-			new Contact { Name="Mom"},
-			new Contact { Name="Dad", Email="dad@mail.com"}
-		 
-		};
-		
-		listContacts.ItemsSource = contacts;
+		LoadContacts();
 	}
+
+	private async void LoadContacts()
+	{
+		listContacts.ItemsSource = await PeopleVM.GetContacts();
+	}
+		
+
 	
 	
 	private async void AddContact_Clicked(object sender, EventArgs e)
