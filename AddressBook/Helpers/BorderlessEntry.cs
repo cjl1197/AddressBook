@@ -1,6 +1,4 @@
-﻿using Microsoft.Maui;
-using System.Drawing;
-
+﻿
 #if IOS
 using UIKit;
 using Foundation;

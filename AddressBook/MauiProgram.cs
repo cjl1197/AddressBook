@@ -25,6 +25,10 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+		
+		builder.Services.AddTransient<MainPage>();
+		builder.Services.AddSingleton<PeopleService>();
+		builder.Services.AddTransient<PeopleVM>();
 
 		return builder.Build();
 	}

@@ -4,7 +4,11 @@
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
              xmlns:fontAwesome="clr-namespace:AddressBook.Helpers"
              x:Class="AddressBook.MainPage"
-             xmlns:local="clr-namespace:AddressBook">
+             xmlns:local="clr-namespace:AddressBook"
+             xmlns:model="clr-namespace:AddressBook.Models"
+             xmlns:viewmodel="clr-namespace:AddressBook.ViewModels"
+             x:DataType="viewmodel:PeopleVM"
+             Title="{Binding Title}">
     <Shell.Titleview
         Shell.TitleviewIsVisible="false" />
         
@@ -49,7 +53,6 @@
                     x:Name="entry"
                     ClearButtonVisibility="WhileEditing"
                     HorizontalOptions="FillAndExpand"
-                    IsVisible="{Binding RemoveBorders}"
                     FontSize="16"
                     Placeholder="Search Contacts"/>
             </HorizontalStackLayout>
@@ -57,13 +60,14 @@
         </Border>
 </StackLayout>
             <CollectionView
+                ItemsSource="{Binding People}"
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 SelectionMode="Single"
                 x:Name="listContacts">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="model:People">
                         <StackLayout>
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer

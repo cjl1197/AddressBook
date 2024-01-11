@@ -1,4 +1,3 @@
-
 namespace AddressBook.View;
 
 public partial class AddContactPage : ContentPage

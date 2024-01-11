@@ -67,6 +67,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
+		<PackageReference Include="Communitytoolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="FontAwesome" Version="4.7.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />

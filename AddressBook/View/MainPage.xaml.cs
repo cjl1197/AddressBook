@@ -1,22 +1,14 @@
-﻿using AddressBook.Models;
-using AddressBook.View;
-using AddressBook.ViewModels;
-
-namespace AddressBook;
+﻿namespace AddressBook;
 
 public partial class MainPage : ContentPage
 {
 
-	public MainPage()
+	public MainPage(PeopleVM peopleVM)
 	{
 		InitializeComponent();
+		peopleVM.GetPeopleCommand.Execute(null);
+		BindingContext = peopleVM;
 		
-		LoadContacts();
-	}
-
-	private async void LoadContacts()
-	{
-		listContacts.ItemsSource = await PeopleVM.GetContacts();
 	}
 		
 	private async void OnTapped(object sender, EventArgs e)

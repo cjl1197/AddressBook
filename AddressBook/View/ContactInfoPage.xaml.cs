@@ -1,5 +1,3 @@
-using AddressBook.ViewModels;
-using AddressBook.Models;
 namespace AddressBook.View;
 public partial class ContactInfoPage : ContentPage
 {

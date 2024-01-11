@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AJ4J+gWLJZfl+4ojsoC4gffX7TxbxsLYhL/wOEvzukPUyN1y/qRZFfXOk5SJQBV1T8vwJo2316XKs9U2ooHcxg==",
+  "dgSpecHash": "54+h0X1YaBndYhZFkLwZmtNCrP5PLNx5U1QJv03TUXEdGhVRhlmfqmtSGQ/yf53C5Y2hsU50HL7sNTwn5e8++g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Craig\\Desktop\\maui\\AddressBook\\AddressBook\\AddressBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Craig\\.nuget\\packages\\communitytoolkit.maui\\7.0.1\\communitytoolkit.maui.7.0.1.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.1\\communitytoolkit.maui.core.7.0.1.nupkg.sha512",
+    "C:\\Users\\Craig\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Craig\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
