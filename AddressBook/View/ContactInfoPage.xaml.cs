@@ -13,4 +13,6 @@ public partial class ContactInfoPage : ContentPage
 		
 		BindingContext = user;
 	}
+
+
 }

@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:fontAwesome="clr-namespace:AddressBook.Helpers"
              x:Class="AddressBook.View.AddContactPage"
+             xmlns:viewmodel="clr-namespace:AddressBook.ViewModels"
+             x:DataType="viewmodel:PeopleVM"
              Title="AddContactPage">
     <Grid
         Grid.ColumnDefinitions="*, *"
@@ -37,7 +39,6 @@
                 </Image>
                 <Entry 
                     Grid.Row="0"
-                    Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Name"
                     ClearButtonVisibility="WhileEditing"

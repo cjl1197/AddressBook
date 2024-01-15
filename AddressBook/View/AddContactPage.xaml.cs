@@ -2,9 +2,11 @@ namespace AddressBook.View;
 
 public partial class AddContactPage : ContentPage
 {
+
 	public AddContactPage()
 	{
 		InitializeComponent();
+		//BindingContext = peopleVM;
 	}
 	
 	public async void Cancel_Clicked(object sender, EventArgs e)
@@ -13,8 +15,6 @@ public partial class AddContactPage : ContentPage
 	}
 	public async void Add_Clicked(object sender, EventArgs e)
 	{
-		#if true
 		await Navigation.PopModalAsync();
-		#endif
 	}
 }

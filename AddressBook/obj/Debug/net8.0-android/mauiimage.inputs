@@ -1,4 +1,4 @@
-File=Resources\Images\address_book.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
-File=Resources\Images\dotnet_bot.png;Link=;BaseSize=300,185;Resize=True;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
-File=Resources\Images\magnifying_glass_solid.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
-File=Resources\AppIcon\appicon.png;Link=;BaseSize=;Resize=;TintColor=;Color=#DFD8F7;IsAppIcon=True;ForegroundScale=;ForegroundFile=
+File=Resources/Images/address_book.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources/Images/dotnet_bot.png;Link=;BaseSize=300,185;Resize=True;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources/Images/magnifying_glass_solid.svg;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
+File=Resources/AppIcon/appicon.png;Link=;BaseSize=;Resize=;TintColor=;Color=#DFD8F7;IsAppIcon=True;ForegroundScale=;ForegroundFile=

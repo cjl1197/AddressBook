@@ -12,13 +12,23 @@
         <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
     </ContentPage.Behaviors>
     
-                <StackLayout>
+    <StackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
                     <Label 
                         Text="{Binding full_name}"
                         FontSize="20"
                         Margin="40, 5, 0, 0"/>
                     <Label 
                         Text="{Binding email}"
+                        FontSize="20"
+                        Margin="40, 5, 0, 0"/>
+                    <Label 
+                        Text="{Binding phone_number}"
+                        FontSize="20"
+                        Margin="40, 5, 0, 0"/>
+                    <Label 
+                        Text="{Binding full_address}"
                         FontSize="20"
                         Margin="40, 5, 0, 0"/>
                 </StackLayout>

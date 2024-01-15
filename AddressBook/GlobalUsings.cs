@@ -5,6 +5,7 @@ global using System.ComponentModel;
 global using System.Runtime.CompilerServices;
 global using Newtonsoft.Json;
 global using System;
-global using System.ComponentModel;
 global using System.Net.Http.Json;
 global using AddressBook.Services;
+global using System.Collections.ObjectModel;
+global using System.Diagnostics;

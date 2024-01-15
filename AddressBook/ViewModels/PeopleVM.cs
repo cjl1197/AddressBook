@@ -1,8 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Net.Http.Json;
-
-namespace AddressBook.ViewModels;
+﻿namespace AddressBook.ViewModels;
 
 public partial class PeopleVM : BaseVM
 {
@@ -15,6 +11,7 @@ public partial class PeopleVM : BaseVM
 		Title = "People";
 		this.peopleService = peopleService;
 		GetPeopleCommand = new Command(async () => await GetContactsAsync());
+;
 	}
 	
 	public async Task GetContactsAsync()
@@ -54,6 +51,7 @@ public partial class PeopleVM : BaseVM
 
     }
 
+	
 	
 		 
 }
