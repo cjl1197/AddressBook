@@ -6,15 +6,15 @@ public partial class AddContactPage : ContentPage
 	public AddContactPage()
 	{
 		InitializeComponent();
-		//BindingContext = peopleVM;
+		Debug.WriteLine("page loaded");
+		PeopleService peopleService = new PeopleService();
+		BindingContext = new PeopleVM(peopleService);
+		
 	}
 	
 	public async void Cancel_Clicked(object sender, EventArgs e)
 	{
 		await Navigation.PopModalAsync();
 	}
-	public async void Add_Clicked(object sender, EventArgs e)
-	{
-		await Navigation.PopModalAsync();
-	}
+	
 }

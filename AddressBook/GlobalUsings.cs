@@ -3,7 +3,7 @@ global using AddressBook.View;
 global using AddressBook.ViewModels;
 global using System.ComponentModel;
 global using System.Runtime.CompilerServices;
-global using Newtonsoft.Json;
+//global using Newtonsoft.Json;
 global using System;
 global using System.Net.Http.Json;
 global using AddressBook.Services;

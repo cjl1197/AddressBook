@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:fontAwesome="clr-namespace:AddressBook.Helpers"
              x:Class="AddressBook.View.AddContactPage"
+             xmlns:model="clr-namespace:AddressBook.Models"
              xmlns:viewmodel="clr-namespace:AddressBook.ViewModels"
              x:DataType="viewmodel:PeopleVM"
              Title="AddContactPage">
@@ -41,6 +42,7 @@
                     Grid.Row="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Name"
+                    Text="{Binding FullName, Mode=TwoWay}"
                     ClearButtonVisibility="WhileEditing"
                     BackgroundColor="blue"
                     VerticalOptions="Center" 
@@ -151,15 +153,16 @@
             Grid.Row="1"
             Grid.Column="0"
             x:Name="AddBtn"
+            IsEnabled="{Binding IsNotBusy}"
             Text="Add"
-            Clicked="Add_Clicked"
+            Command="{Binding AddContactCommand}"
             Margin="5"/>
         <Button 
             Grid.Row="1"
             Grid.Column="1"
             x:Name="CancelBtn"
             Text="Cancel"
-            Clicked="Cancel_Clicked"
+            Command="{Binding PopModalCommand}"
             Margin="5"/>
     </Grid>
 </ContentPage>
