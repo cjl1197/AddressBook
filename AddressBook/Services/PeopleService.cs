@@ -47,8 +47,5 @@ public class PeopleService
         }
         else
             return false;
-        
-        
-        return true;
     }
 }

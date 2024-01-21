@@ -6,11 +6,17 @@ public partial class MainPage : ContentPage
 	public MainPage(PeopleVM peopleVM)
 	{
 		InitializeComponent();
-		peopleVM.GetPeopleCommand.Execute(null);
-		BindingContext = peopleVM;
 		
 	}
 		
+	protected override void OnAppearing()
+	{
+		base.OnAppearing();
+		PeopleService peopleService = new PeopleService();
+		var peopleVM = new PeopleVM(peopleService);
+		BindingContext = peopleVM;
+		peopleVM.GetPeopleCommand.Execute(null);
+	}
 	private async void OnTapped(object sender, EventArgs e)
 	{
 		// placeholder for navigating to a single persons info. needs to be completed
