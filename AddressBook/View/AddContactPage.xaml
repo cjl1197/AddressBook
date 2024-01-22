@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:fontAwesome="clr-namespace:AddressBook.Helpers"
+             xmlns:helpers="clr-namespace:AddressBook.Helpers"
              x:Class="AddressBook.View.AddContactPage"
              xmlns:model="clr-namespace:AddressBook.Models"
              xmlns:viewmodel="clr-namespace:AddressBook.ViewModels"
@@ -12,61 +12,42 @@
         Grid.RowDefinitions="*, Auto">
 
         <VerticalStackLayout
-            Grid.Row="0"
-            Grid.Column="0"
             Grid.ColumnSpan="2"
             Padding="0,100,0,0">
-        <Border
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            StrokeThickness="2"
-            StrokeShape="Rectangle 40"
-            Margin="45,5"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand">
-            
+        <helpers:CustomBorder
+            Stroke="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}">
             <HorizontalStackLayout>
                 <Image
                     HorizontalOptions="Start"
                     Margin="20, 0">
                     <Image.Source>
                         <FontImageSource 
-                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.User}"
+                            Glyph="{x:Static helpers:FontAwesomeIcons.User}"
                             Color="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}"
                             FontFamily="FAS"
                             Size="24"/>
                     </Image.Source>
                 </Image>
                 <Entry 
-                    Grid.Row="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Name"
                     Text="{Binding FullName, Mode=TwoWay}"
                     ClearButtonVisibility="WhileEditing"
-                    BackgroundColor="blue"
                     VerticalOptions="Center" 
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="FillAndExpand" />
             </HorizontalStackLayout>
-        </Border>
+        </helpers:CustomBorder>
             
-        <Border
+        <helpers:CustomBorder
             Grid.Row="1"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            StrokeThickness="2"
-            StrokeShape="Rectangle 40"
-            Margin="45,5"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand">
-            
+            Stroke="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}">
             <HorizontalStackLayout>
                 <Image
                     HorizontalOptions="Start"
                     Margin="20, 0">
                     <Image.Source>
                         <FontImageSource 
-                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.Phone}"
+                            Glyph="{x:Static helpers:FontAwesomeIcons.Phone}"
                             Color="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}"
                             FontFamily="FAS"
                             Size="24"/>
@@ -74,7 +55,6 @@
                 </Image>
                 <Entry 
                     Grid.Row="1"
-                    Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Phone Number"
                     ClearButtonVisibility="WhileEditing"
@@ -82,16 +62,10 @@
                     VerticalOptions="Center" 
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
-        </Border>
-        <Border
+        </helpers:CustomBorder>
+        <helpers:CustomBorder
             Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            StrokeThickness="2"
-            StrokeShape="Rectangle 40"
-            Margin="45,5"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand">
+            Stroke="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}">
             
             <HorizontalStackLayout>
                 <Image
@@ -99,7 +73,7 @@
                     Margin="20, 0">
                     <Image.Source>
                         <FontImageSource 
-                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.Envelope}"
+                            Glyph="{x:Static helpers:FontAwesomeIcons.Envelope}"
                             Color="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}"
                             FontFamily="FAS"
                             Size="24"/>
@@ -107,7 +81,6 @@
                 </Image>
                 <Entry 
                     Grid.Row="1"
-                    Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Email"
                     Keyboard="Email"
@@ -115,16 +88,10 @@
                     VerticalOptions="Center" 
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
-        </Border>
-        <Border
+        </helpers:CustomBorder>
+        <helpers:CustomBorder
             Grid.Row="3"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            StrokeThickness="2"
-            StrokeShape="Rectangle 40"
-            Margin="45,5"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand">
+            Stroke="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}">
             
             <HorizontalStackLayout>
                 <Image
@@ -132,7 +99,7 @@
                     Margin="20, 0">
                     <Image.Source>
                         <FontImageSource 
-                            Glyph="{x:Static fontAwesome:FontAwesomeIcons.LocationDot}"
+                            Glyph="{x:Static helpers:FontAwesomeIcons.LocationDot}"
                             Color="{AppThemeBinding Light={StaticResource PrimaryDark}, Dark={StaticResource Primary}}"
                             FontFamily="FAS"
                             Size="24"/>
@@ -140,14 +107,13 @@
                 </Image>
                 <Entry 
                     Grid.Row="1"
-                    Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Placeholder="Address"
                     ClearButtonVisibility="WhileEditing"
                     VerticalOptions="Center" 
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
-        </Border>
+        </helpers:CustomBorder>
         </VerticalStackLayout>        
         <Button 
             Grid.Row="1"
